@@ -1,0 +1,80 @@
+/* Reset Base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, #3b1c32,  #5e503f, #a9927d);
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.calculator{
+    background: #b96d40;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+#display{
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 10px;
+    background-color: #e8e9eb;
+    color: #3b1c32;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+    border: none; 
+    font-size: 24px;
+    border: none;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    
+}
+
+button{
+    border: none;
+    padding: 20px;
+    color: #ca054d;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:nth-child(n){
+    background: #ffcf9c; 
+}
+
+button:nth-child(4n){
+    background-color: #afe0ce;
+}
+button:nth-child(14){
+    background-color: #f8c0c8;
+}
+button:nth-child(15){
+    background-color: #c5d86d;
+}
+
+button:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+button:active{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
